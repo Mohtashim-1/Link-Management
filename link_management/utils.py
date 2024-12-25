@@ -7,4 +7,5 @@ def path_resolver(path: str):
         destination = frappe.db.get_value("Short Link", {"short_link": path}, "destination_url")
         frappe.logger().info(f"Redirecting to: {destination}")  # Log the destination URL
         frappe.redirect(destination)
+        # 
     return original_resolve_path(path)
