@@ -5,6 +5,14 @@ app_description = "link management app"
 app_email = "shoaibmohtashim973@gmail.com"
 app_license = "mit"
 
+
+# website_route_rules = [
+#     {"from_route": "/frappe", "to_route": "path_to_resolver_function"}
+# ]
+
+
+website_path_resolver = "link_management.utils.path_resolver"
+# website_path_resolver = ""
 # Apps
 # ------------------
 
